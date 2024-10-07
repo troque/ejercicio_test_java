@@ -1,0 +1,88 @@
+/*
+ * Please keep the elements ordered alphabetically.
+ */
+
+apply from: 'BCH/settings.gradle'
+apply from: 'BNK/settings.gradle'
+apply from: 'CBP/settings.gradle'
+apply from: 'CCM/settings.gradle'
+apply from: 'CCP/settings.gradle'
+apply from: 'CSH/settings.gradle'
+apply from: 'DAP/settings.gradle'
+apply from: 'OSA/settings.gradle'
+apply from: 'P2P/settings.gradle'
+apply from: 'PIP/settings.gradle'
+apply from: 'WPD/settings.gradle'
+
+include ':fermat-android-api'
+include ':fermat-android-core'
+include ':fermat-api'
+include ':fermat-core'
+
+
+include ':fermat-cry-api'
+project(':fermat-cry-api').projectDir = new File('CRY/library/api/fermat-cry-api')
+
+//BNP Projects
+
+include ':fermat-bnp-plugin-network-service-bank-notes-bitdubai'
+project(':fermat-bnp-plugin-network-service-bank-notes-bitdubai').projectDir = new File('BNP/plugin/network_service/fermat-bnp-plugin-network-service-bank-notes-bitdubai')
+
+// CRY Projects
+
+// Milestone 1 project:
+include ':fermat-cry-plugin-crypto-vault-bitcoin-bitdubai'
+project(':fermat-cry-plugin-crypto-vault-bitcoin-bitdubai').projectDir = new File('CRY/plugin/crypto_vault/fermat-cry-plugin-crypto-vault-bitcoin-bitdubai')
+
+// Milestone 1 project:
+include ':fermat-cry-plugin-crypto-network-bitcoin-bitdubai'
+project(':fermat-cry-plugin-crypto-network-bitcoin-bitdubai').projectDir = new File('CRY/plugin/crypto_network/fermat-cry-plugin-crypto-network-bitcoin-bitdubai')
+
+// Milestone 1 project:
+include ':fermat-cry-plugin-crypto-module-crypto-address-book-bitdubai'
+project(':fermat-cry-plugin-crypto-module-crypto-address-book-bitdubai').projectDir = new File('CRY/plugin/crypto_module/fermat-cry-plugin-crypto-module-crypto-address-book-bitdubai')
+
+// Milestone 1 project:
+include ':fermat-cry-plugin-crypto-router-incoming-crypto-bitdubai'
+project(':fermat-cry-plugin-crypto-router-incoming-crypto-bitdubai').projectDir = new File('CRY/plugin/crypto_router/fermat-cry-plugin-crypto-router-incoming-crypto-bitdubai')
+
+//CCM Projects
+
+include ':fermat-dmp-plugin-world-crypto-index-bitdubai'
+project(':fermat-dmp-plugin-world-crypto-index-bitdubai').projectDir = new File('DMP/plugin/world/fermat-dmp-plugin-world-crypto-index-bitdubai')
+
+// engine
+include ':fermat-dmp-plugin-engine-sub-app-runtime-bitdubai'
+project(':fermat-dmp-plugin-engine-sub-app-runtime-bitdubai').projectDir = new File('DMP/plugin/engine/fermat-dmp-plugin-engine-sub-app-runtime-bitdubai')
+
+// Milestone 1 project:
+include ':fermat-dmp-android-sub-app-wallet-manager-bitdubai'
+project(':fermat-dmp-android-sub-app-wallet-manager-bitdubai').projectDir = new File('DMP/android/sub_app/fermat-dmp-android-sub-app-wallet-manager-bitdubai')
+
+include ':fermat-dmp-android-sub-app-wallet-store-bitdubai'
+project(':fermat-dmp-android-sub-app-wallet-store-bitdubai').projectDir = new File('DMP/android/sub_app/fermat-dmp-android-sub-app-wallet-store-bitdubai')
+
+include ':fermat-dmp-android-sub-app-wallet-factory-bitdubai'
+project(':fermat-dmp-android-sub-app-wallet-factory-bitdubai').projectDir = new File('DMP/android/sub_app/fermat-dmp-android-sub-app-wallet-factory-bitdubai')
+
+include ':fermat-dmp-android-sub-app-wallet-publisher-bitdubai'
+project(':fermat-dmp-android-sub-app-wallet-publisher-bitdubai').projectDir = new File('DMP/android/sub_app/fermat-dmp-android-sub-app-wallet-publisher-bitdubai')
+
+include ':fermat-dmp-android-sub-app-shop-manager-bitdubai'
+project(':fermat-dmp-android-sub-app-shop-manager-bitdubai').projectDir = new File('DMP/android/sub_app/fermat-dmp-android-sub-app-shop-manager-bitdubai')
+
+// identity
+include ':fermat-mkt-plugin-identity-marketer-bitdubai'
+project(':fermat-mkt-plugin-identity-marketer-bitdubai').projectDir = new File('MKT/plugin/identity/fermat-mkt-plugin-identity-marketer-bitdubai')
+
+// SHP Projects
+
+//module
+include ':fermat-shp-plugin-sub-app-module-brand-bitdubai'
+project(':fermat-shp-plugin-sub-app-module-brand-bitdubai').projectDir = new File('SHP/plugin/sub-app-module/fermat-shp-plugin-sub-app-module-brand-bitdubai')
+
+// identity
+include ':fermat-shp-plugin-identity-brand-bitdubai'
+project(':fermat-shp-plugin-identity-brand-bitdubai').projectDir = new File('SHP/plugin/identity/fermat-shp-plugin-identity-brand-bitdubai')
+
+

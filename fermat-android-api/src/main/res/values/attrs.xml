@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="typeface" format="enum">
+        <enum name="CAVIAR_DREAMS" value="0" />
+        <enum name="CAVIAR_DREAMS_BOLD" value="1" />
+        <enum name="CAVIAR_DREAMS_ITALIC" value="2" />
+        <enum name="CAVIAR_DREAMS_ITALIC_BOLD" value="3" />
+        <enum name="ROBOTO_REGULAR" value="4"></enum>
+    </attr>
+
+    <declare-styleable name="FermatTextView">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="FermatEditText">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="FermatButton">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="FermatSpinner">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="FermatCheckBox">
+        <attr name="typeface" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="tlcp_strokeWidth" format="dimension"/>
+        <attr name="tlcp_text" format="reference"/>
+        <attr name="tlcp_textSize" format="dimension"/>
+        <attr name="tlcp_drawable" format="reference"/>
+        <attr name="tlcp_progress_color" format="reference"/>
+        <attr name="tlcp_progress2_color" format="reference"/>
+        <attr name="tlcp_bg_color" format="reference"/>
+        <attr name="tlcp_progress" format="integer"/>
+        <attr name="tlcp_progress2" format="integer"/>
+    </declare-styleable>
+
+
+</resources>
